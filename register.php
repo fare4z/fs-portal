@@ -16,21 +16,28 @@ include_once "includes/header.php";
             <div class="col-md-10">
                 <div class="card">
                     <div class="card-body">
+     <form method="POST" action="register_proses.php"> 
                         <div class="mb-3">
                             <label for="name" class="form-label fw-medium">Name</label>
                             <input type="text" class="form-control" name="name" placeholder="Please enter your name">
                         </div>
 
                         <div class="mb-3">
-                            <label for="username" class="form-label fw-medium">Username</label>
-                            <input type="text" class="form-control" name="username" placeholder="Please enter your username">
+                            <label for="username" class="form-label fw-medium">NRIC</label>
+                            <input type="text" class="form-control" name="nric" placeholder="Please enter your NRIC">
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label fw-medium">Password</label>
                             <input type="password" class="form-control" name="password" placeholder="Please enter your password">
                         </div>
 
+                          <div class="mb-3">
+                            <label for="program" class="form-label fw-medium">Program</label>
+                            <input type="text" class="form-control" name="program" placeholder="Please enter ur program code">
+                        </div>
+
                         <button type="submit" class="btn btn-primary">Submit</button>
+     </form>
                     </div>
                 </div>
             </div>
