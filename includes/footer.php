@@ -1,6 +1,6 @@
     <footer class="footer bg-dark text-white text-center py-4">
         <div class="container">
-            <p>&copy; 2024 - <?php echo date("Y");?> Student Portal. All Rights Reserved.</p>
+            <p>&copy; 2024 - <?php echo date("Y"); ?> Student Portal. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -12,6 +12,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-</body>
 
-</html>
+         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+
+         <?php if (isset($_SESSION['flash_msg'])) : ?>
+        <script>
+            Swal.fire({
+                title: "<?php echo $_SESSION['flash_msg']['msg'];?>",
+                icon: "<?php echo $_SESSION['flash_msg']['type'];?>",
+                timer: 2000
+            });
+        </script>
+
+    <?php unset($_SESSION['flash_msg']);
+    endif; ?>
+
+
+    </body>
+
+    </html>

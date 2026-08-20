@@ -13,28 +13,28 @@ include_once "includes/header.php";
     <section class="py-5">
         <div class="container">
             <div class="row text-center">
-            <form method="post" action="login.php">
+          
             <div class="row justify-content-md-center">
                 <div class="col-md-10">
                     <div class="card">
                         <div class="card-body">
 
-                           
-                            <div class="mb-3">
-                                <label for="username" class="form-label fw-medium">Username</label>
-                                <input type="text" class="form-control" name="username" placeholder="Please enter your username">
-                            </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label fw-medium">Password</label>
-                                <input type="password" class="form-control" name="password" placeholder="Please enter your password">
-                            </div>
-
-                            <button type="submit" class="btn btn-primary">Login</button>
+<form method="POST" action="login_proses.php"> 
+<div class="mb-3">
+<label for="username" class="form-label fw-medium">NRIC</label>
+<input type="text" class="form-control" name="nric" placeholder="Please enter your ic number">
+</div>
+<div class="mb-3">
+<label for="password" class="form-label fw-medium">Password</label>
+<input type="password" class="form-control" name="password" placeholder="Please enter your password">
+</div>
+<button type="submit" class="btn btn-primary">Login</button>
+</form>
                         </div>
                     </div>
                 </div>
             </div>
-        </form>
+   
                
             </div>
         </div>
